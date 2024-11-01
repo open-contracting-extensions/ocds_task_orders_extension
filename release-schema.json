@@ -1,0 +1,65 @@
+{
+  "definitions": {
+    "TaskOrder": {
+      "title": "Task order",
+      "description": "A task order is placed by the buyer or the procuring entity against an indefinite delivery/indefinite quantity contract. A task order describes a specific need.",
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "title": "Identifier",
+          "description": "The identifier of the task order.",
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "title": "Title",
+          "description": "The title of the task order.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "purchaseOrderID": {
+          "title": "Purchase order identifier",
+          "description": "The identifier of the purchase order associated with the task order.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "executionPeriod": {
+          "title": "Execution period",
+          "description": "The period over which the task order is executed.",
+          "$ref": "#/definitions/Period"
+        },
+        "value": {
+          "title": "Value",
+          "description": "The value of the task order.",
+          "$ref": "#/definitions/Value"
+        },
+      },
+      "minProperties": 1
+    }
+  },
+  "definitions": {
+    "Implementation": {
+      "properties": {
+        "taskOrders": {
+          "title": "Task orders",
+          "description": "The task orders within the contract.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TaskOrder"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

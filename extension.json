@@ -1,0 +1,21 @@
+{
+  "name": {
+    "en": "Task orders"
+  },
+  "description": {
+    "en": "Adds a task orders array to the implementation object. Use this extension only if task order contracts are signed with single suppliers. Otherwise, follow the framework agreements guidance."
+  },
+  "documentationUrl": {
+    "en": "https://github.com/open-contracting-extensions/ocds_task_orders_extension/"
+  },
+  "compatibility": [
+    "1.1"
+  ],
+  "schemas": [
+    "release-schema.json"
+  ],
+  "contactPoint": {
+    "name": "Open Contracting Partnership",
+    "email": "data@open-contracting.org"
+  }
+}
