@@ -41,12 +41,10 @@
           "title": "Value",
           "description": "The value of the task order.",
           "$ref": "#/definitions/Value"
-        },
+        }
       },
       "minProperties": 1
-    }
-  },
-  "definitions": {
+    },
     "Implementation": {
       "properties": {
         "taskOrders": {
