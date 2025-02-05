@@ -8,6 +8,7 @@ This extension enables the recording of task orders within the implementation se
 {
   "contracts": [
     {
+      "id": "31001472",
       "awardID": "31001472",
       "implementation": {
         "taskOrders": [
@@ -16,8 +17,8 @@ This extension enables the recording of task orders within the implementation se
             "title": "Gateway Greenway Final Design",
             "purchaseOrderID": "22267952",
             "executionPeriod": {
-              "startDate": "2019-11-18T00:00:00-0700",
-              "endDate": "2021-01-31T00:00:00-0700"
+              "startDate": "2019-11-18T00:00:00-07:00",
+              "endDate": "2021-01-31T00:00:00-07:00"
             },
             "value": {
               "amount": 91145,
